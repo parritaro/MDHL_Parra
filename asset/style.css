@@ -13,12 +13,11 @@
     font-family: comici;
 }
 header{
-    height: 80vh;
+    height: 77vh;
     width: 100vw;
 }
 /*secciondel titulo principal*/
 h1{
-    
     font-size:60px;
     width: 820px;
     height: 50px;
@@ -57,71 +56,55 @@ nav>a[href="#"]{
 }
 /*seccion del encabezado e imagen*/
 .encabezado{
-   height: 60vh;
+   height: 58vh;
    width: 100vw;
     margin-top: -30px;
-   
 }
 /*seccion del segundo titulo debajo de la imagen*/
 h2{
     border:2px solid black;
     text-align: center;
+    margin-top: -5px;    
 }
 /*seccion del cuerpo*/
 main{
     width: 100vw; 
     height: 70vh;
-    
-       
+    top: -10px;
 }
 
 /*tamaño del logo*/
 .logo{
-    height: 10em;
+    height: 9em;
     position: relative;
-    
+    top: -5px;
 }
-/* altura del logo de about */
-#lAbout{
-    top: -120px;
-}
-main>div{
-    height: 100px;
+/*posicion y tamaño de los div del logo y parrafos*/
+.caja1{
     width: 20vw;
-    display: inline-block;
-}
-section{
-    display: inline-block;
-    width: 60%;
-    margin-left: 30px;
     
 }
-
+.caja2{
+    width: 70vw;
+    position: absolute;
+    top: 80vh;
+    left: 20vw;
+}
 
 /*fondo con las imagenes para cada main*/
-/*#mIndex{
-    background-image: url('./img/hockey_1.jpg');       
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    background-size: cover;
-    
-    
 
-}*/
 #mAbout{
     background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(./img/hockey_2.jpg);
     background-repeat: no-repeat;    
     background-size: cover;
-
 }
 #mContact{
     background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(./img/hockey_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*queria poner la imagen de fondo en el body y colocarle opacity, pero me afecta al logo y al texto asi que puse un div vacio.
-por eso hay un div vacio que uso de fondo y aplico las propiedades sin afectar al resto*/
+/*queria poner la imagen de fondo en el body y colocarle opacity, pero sin que me afecta al logo y al texto asi que puse 
+un div vacio. Por eso hay un div vacio que uso de fondo y aplico las propiedades sin afectar al resto*/
 #background-image {
     background-image: url('./img/hockey_1.jpg');
     background-repeat: no-repeat;
@@ -133,3 +116,9 @@ por eso hay un div vacio que uso de fondo y aplico las propiedades sin afectar a
     top: 80vh;
     left: 0;
   }
+  /*seccion de articulos */
+  article{
+    margin-bottom: 20px;
+  }
+  /*logo de contacto*/
+ 
