@@ -94,19 +94,19 @@ main{
 /*fondo con las imagenes para cada main*/
 
 #mAbout{
-    background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(./img/hockey_2.jpg);
+    background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/hockey_2.jpg);
     background-repeat: no-repeat;    
     background-size: cover;
 }
 #mContact{
-    background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(./img/hockey_3.jpg);
+    background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/hockey_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*queria poner la imagen de fondo en el body y colocarle opacity, pero sin que me afecta al logo y al texto asi que puse 
+/*queria poner la imagen de fondo en el body y colocarle opacity, pero sin que me afecta al logo y al texto. asi que puse 
 un div vacio. Por eso hay un div vacio que uso de fondo y aplico las propiedades sin afectar al resto*/
 #background-image {
-    background-image: url('./img/hockey_1.jpg');
+    background-image: url('../img/hockey_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.3; 
