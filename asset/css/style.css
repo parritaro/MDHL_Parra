@@ -6,23 +6,26 @@
 /*agrega la fuente del pdf*/
 @font-face{
     font-family:comici;
-    src: url('./fonts/comici.ttf') format('truetype');
+    src: url('../fonts/comici.ttf') format('truetype');
 
 }
-*{
-    font-family: comici;
+body{
+    width: 98vw;
 }
+
 header{
     height: 77vh;
-    width: 100vw;
+    width: 100%;
 }
 /*secciondel titulo principal*/
 h1{
-    font-size:60px;
-    width: 820px;
-    height: 50px;
-    margin-left: 100px;
+    font-family: comici;
+    font-size:50px;
+    width: 686px;
+    height: 60px;
+    margin-left: 20px;
    margin-top: 0px;
+   margin-bottom: 10px;
 }
 /*seccion de la barra de navegacion*/
 nav{
@@ -57,11 +60,12 @@ nav>a[href="#"]{
 /*seccion del encabezado e imagen*/
 .encabezado{
    height: 58vh;
-   width: 100vw;
+   width: 100%;
     margin-top: -30px;
 }
 /*seccion del segundo titulo debajo de la imagen*/
 h2{
+    width: 100%;
     border:2px solid black;
     text-align: center;
     margin-top: -5px;    
@@ -71,24 +75,26 @@ main{
     width: 100vw; 
     height: 70vh;
     top: -10px;
+    display: flex;
 }
 
 /*tamaño del logo*/
 .logo{
-    height: 9em;
-    position: relative;
+    height: 9em;    
     top: -5px;
+    margin-left: 2em;
 }
 /*posicion y tamaño de los div del logo y parrafos*/
 .caja1{
     width: 20vw;
+    margin-top: 2rem;
     
 }
 .caja2{
     width: 70vw;
-    position: absolute;
     top: 80vh;
     left: 20vw;
+    margin-top: 2rem;
 }
 
 /*fondo con las imagenes para cada main*/
@@ -113,6 +119,7 @@ un div vacio. Por eso hay un div vacio que uso de fondo y aplico las propiedades
     height: 100vh; 
     width: 100vw; 
     position: absolute;
+    z-index: -1;
     top: 80vh;
     left: 0;
   }
@@ -120,5 +127,62 @@ un div vacio. Por eso hay un div vacio que uso de fondo y aplico las propiedades
   article{
     margin-bottom: 20px;
   }
-  /*logo de contacto*/
- 
+  /*seccion tabla*/
+  .titulotabla h3{
+    text-align: center;
+    font-family: comici;
+    font-size: 2rem;
+  }
+  table{
+    border: 1px solid black;
+    width: 70vw;
+    height: 20rem;
+  }
+  th{
+    border: 1px solid black;
+  }
+ td{
+    border: 1px solid black;
+    text-align: center;
+ }
+
+ tr th{
+    background-color: green;
+  }
+
+ table tr:nth-child(odd) td {
+    background-color:rgba(204, 202, 202, 0.493);
+  }
+ table tr:nth-child(even) td:first-child {
+    background-color: rgb(255, 113, 47);
+  }
+  .infotabla{
+    font-size: 1.5rem;
+    margin-top: 2%;
+    
+  }
+  
+/*seccion listas*/
+
+section h3{
+    
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+#subtituloReglas{
+    font-family: Cambria;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+
+ li{
+    font-size: 20px;
+    margin-bottom: 2%;
+ }
+ ul li{
+    margin-left: 3%;
+ }
